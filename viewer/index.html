@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>通用思考与行动引擎 · 知识仪表盘</title>
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<header>
+  <div class="brand">
+    <span class="logo">◆</span>
+    <h1>通用思考与行动引擎</h1>
+    <span class="sub">Universal Thinking &amp; Action Engine</span>
+  </div>
+  <nav id="tabs">
+    <button data-tab="overview" class="active">知识总览</button>
+    <button data-tab="map">知识地图</button>
+    <button data-tab="browse">知识浏览</button>
+    <button data-tab="cases">案例与实验</button>
+    <button data-tab="evolution">进化中心</button>
+    <button data-tab="history">版本历史</button>
+  </nav>
+</header>
+<main id="main">
+  <section id="tab-overview" class="tab active"></section>
+  <section id="tab-map" class="tab"></section>
+  <section id="tab-browse" class="tab"></section>
+  <section id="tab-cases" class="tab"></section>
+  <section id="tab-evolution" class="tab"></section>
+  <section id="tab-history" class="tab"></section>
+</main>
+<footer>数据生成于 <span id="gen-at"></span> · 重新生成：<code>python scripts/build_viewer.py</code></footer>
+<script src="data.js"></script>
+<script src="app.js"></script>
+</body>
+</html>
